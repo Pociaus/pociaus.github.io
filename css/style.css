@@ -1,0 +1,251 @@
+html , body {
+  height: 100%;
+  font-family: 'Roboto Mono', monospace;
+  font-size: calc(7px + (22 - 14) * ((100vw - 300px) / (1600 - 300)));
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.first-page {
+background-size: cover;
+height: 100%;
+overflow: hidden;
+}
+
+.second-page {
+  background: url(img/background.jpg) no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
+}
+.first-page__text {
+  padding: 70px;
+  color: white;
+  font-family: 'Roboto Mono', monospace;
+  position: absolute;
+  right: 55%;
+  margin-right: -50px;
+  margin-top: 50px;
+}
+
+.text--css {
+  color: black;
+  margin: 0 1.25rem 5rem 1.25rem;
+  padding-top: 40px;
+}
+
+.text-css {
+  color: black;
+  margin: 0 1.25rem 5rem 1.25rem;
+}
+
+.second-page {
+  background: url('img/background.png') no-repeat;
+  background-repeat: no-repeat;
+  background-size: auto;
+  top: 0;
+  left: 0;
+}
+.about-img {
+  margin-right: 50px;
+}
+
+.skills-photo {
+  width: 100%;
+  max-width: 60px;
+  height: auto;
+}
+
+.skills-photo_first {
+  margin-bottom: 40px;
+  width: 100%;
+  max-width: 60px;
+  height: auto;
+}
+
+.third-page {
+  position: relative;
+  color: black;
+  text-align: center;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: auto;
+  top: 0;
+  left: 0;
+}
+
+.popup .overlay {
+  width:100vw;
+  height:100vh;
+  position: absolute;
+  visibility: hidden;
+  display: none;
+  background:rgba(0,0,0,0.9);
+  z-index:1;
+}
+
+.popup .content {
+
+  max-width: 70%;
+  width: 100%;
+  margin: 50px auto;
+  position:fixed;
+  left: 50%;
+  top: 50%;
+  -ms-transform: translate(-50%,-50%);
+  -moz-transform:translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform:translate(-50%,-50%) scale(0);
+  background:#fff;
+  z-index:2;
+  text-align:center;
+  padding:20px;
+  box-sizing:border-box;
+  font-family:"Open Sans",sans-serif;
+}
+
+.popup .close-btn {
+  cursor:pointer;
+  position:absolute;
+  right:20px;
+  top:20px;
+  width:30px;
+  height:30px;
+  background:#222;
+  color:#fff;
+  font-size:25px;
+  font-weight:600;
+  line-height:30px;
+  text-align:center;
+  border-radius:50%;
+}
+
+.popup.active .overlay {
+  display:block;
+}
+
+.popup.active .content {
+  transition:all 300ms ease-in-out;
+  transform:translate(-50%,-50%) scale(1);
+}
+
+.popup-project {
+  clear: both;
+}
+
+.text-first {
+  float: left;
+}
+
+.text-second {
+  float: inherit;
+}
+
+.logo-sizes {
+  height: 50px;
+  width: 50px;
+}
+
+.popup-foto {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+}
+
+.text-popup {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.button
+{
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #0C5;
+  font-size: 12px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 150;
+  margin: 5em auto;
+  padding: 20px 0;
+  width: 110px;
+  height:15px;
+  background: #0D6;
+  border: 1px solid #0D6;
+  color: #FFF;
+  overflow: hidden;
+  margin-left: 20px;
+  transition: all 0.5s;
+}
+
+.button:hover, .button:active
+{
+  text-decoration: none;
+  color: #0C5;
+  border-color: #0C5;
+  background: #FFF;
+}
+
+.button span
+{
+  display: inline-block;
+  position: relative;
+  padding-right: 0;
+
+  transition: padding-right 0.5s;
+}
+
+.button span:after
+{
+  content: ' ';
+  position: absolute;
+  top: 0;
+  right: -18px;
+  opacity: 0;
+  width: 10px;
+  height: 10px;
+  margin-top: -10px;
+  background: rgba(0, 0, 0, 0);
+  border: 3px solid #FFF;
+  border-top: none;
+  border-right: none;
+  transition: opacity 0.5s, top 0.5s, right 0.5s;
+  transform: rotate(-45deg);
+}
+.button:hover span, .button:active span
+{
+  padding-right: 30px;
+}
+
+.button:hover span:after, .button:active span:after
+{
+  transition: opacity 0.5s, top 0.5s, right 0.5s;
+  opacity: 1;
+  border-color: #0C5;
+  right: 0;
+  top: 50%;
+}
+
+.btn-secondary {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  background: #4CAF50;
+}
+
+.fb-icon , .lin-icon , .email-icon {
+  margin-left: 25px;
+}
+
+.text-footer {
+  color: #17252A;
+}
+
+.text-h2 {
+  padding-top: 10px;
+}
+.page-footer {
+  background-color: #3AAFA9;
+}

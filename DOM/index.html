@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" href="style/css.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+     <script src="https://kit.fontawesome.com/7d9ba20618.js" crossorigin="anonymous" SameSite="none Secure"></script>
+    <title>DOM Manipulation</title>
+  </head>
+  <body>
+    <div class="first-section">
+      <header>
+        <h2 class="header-text">Yours task list!</h2>
+        <form id="task-form">
+          <input id="search-note" class="text-field"type="text" placeholder="Search your task">
+        </form>
+      </header>
+      <div class="example-list">
+        <ul id="list">
+          <li>
+            <p class="left">Add your task</p>
+            <p>
+            <i class="fa fa-user-edit"></i>
+            <i class="fa fa-trash-alt"></i></p>
+            <input type="text" class=edit-list>
+          </li>
+        </ul>
+      </div>
+
+      <div id="hide-task">
+        <label for="hide">Hide tasks</label>
+        <input type="checkbox" id="hide-task">
+      </div>
+      <div id="plus-task">
+        <form id="plus">
+          <input type="text" placeholder="Add task" id="add-task__input">
+          <input type="submit" value="Add" id="add-button">
+        </form>
+      </div>
+    </div>
+  </body>
+  <script src="js/js.js"></script>
+</html>
