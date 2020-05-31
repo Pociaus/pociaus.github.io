@@ -1,7 +1,7 @@
 html , body {
   height: 100%;
   font-family: 'Roboto Mono', monospace;
-  font-size: calc(7px + (22 - 14) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc(7px + (22 - 14) * ((100vw - 100px) / (2100 - 300)));
 }
 
 * {
@@ -17,6 +17,29 @@ height: 100%;
 overflow: hidden;
 }
 
+.about-image {
+  margin-top: -30px;
+  position: relative;
+  width: 400px;
+  height: 200px;
+}
+
+
+
+.img-thumbnail {
+  border-radius: 8px;
+}
+
+.img-thumbnail figure img {
+	opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.img-thumbnail figure:hover img {
+	opacity: .5;
+}
+
+
 .second-page {
   background: url(img/background.jpg) no-repeat center center fixed;
   background-size: cover;
@@ -28,7 +51,7 @@ overflow: hidden;
   color: white;
   font-family: 'Roboto Mono', monospace;
   position: absolute;
-  right: 55%;
+  right: 42%;
   margin-right: -50px;
   margin-top: 50px;
 }
@@ -36,7 +59,7 @@ overflow: hidden;
 .text--css {
   color: black;
   margin: 0 1.25rem 5rem 1.25rem;
-  padding-top: 40px;
+  margin-top: 45px;
 }
 
 .text-css {
@@ -67,6 +90,7 @@ overflow: hidden;
   max-width: 60px;
   height: auto;
 }
+
 
 .third-page {
   position: relative;
@@ -232,11 +256,37 @@ overflow: hidden;
 .btn-secondary {
   margin-top: 25px;
   margin-bottom: 25px;
-  background: #4CAF50;
+}
+
+a.button1{
+ display:inline-block;
+ padding:0.35em 1.2em;
+ border:0.1em solid #000000;
+ margin:0 0.3em 0.3em 0;
+ border-radius:0.12em;
+ box-sizing: border-box;
+ text-decoration:none;
+ font-family:'Roboto',sans-serif;
+ font-weight:300;
+ color:#17252A;
+ text-align:center;
+ transition: all 0.2s;
+}
+a.button1:hover{
+ color:#17252A;
+ background-color:#17252A;
+}
+@media all and (max-width:30em){
+ a.button1{
+  display:block;
+  margin:0.4em auto;
+ }
 }
 
 .fb-icon , .lin-icon , .email-icon {
   margin-left: 25px;
+  max-width: 100%;
+  height: auto !important;
 }
 
 .text-footer {
