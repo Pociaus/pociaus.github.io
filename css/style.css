@@ -185,6 +185,12 @@ overflow: hidden;
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
+.buttons {
+  text-align: center;
+  position: static;
+  margin-top: 20px;
+}
 .button
 {
   text-transform: uppercase;
@@ -194,7 +200,7 @@ overflow: hidden;
   font-family: "Nunito", sans-serif;
   font-weight: 150;
   margin: 5em auto;
-  padding: 20px 0;
+  padding: 10px 0;
   width: 110px;
   height:15px;
   background: #0D6;
@@ -256,37 +262,6 @@ overflow: hidden;
 .btn-secondary {
   margin-top: 25px;
   margin-bottom: 25px;
-}
-
-a.button1{
- display:inline-block;
- padding:0.35em 1.2em;
- border:0.1em solid #000000;
- margin:0 0.3em 0.3em 0;
- border-radius:0.12em;
- box-sizing: border-box;
- text-decoration:none;
- font-family:'Roboto',sans-serif;
- font-weight:300;
- color:#17252A;
- text-align:center;
- transition: all 0.2s;
-}
-a.button1:hover{
- color:#17252A;
- background-color:#17252A;
-}
-@media all and (max-width:30em){
- a.button1{
-  display:block;
-  margin:0.4em auto;
- }
-}
-
-.fb-icon , .lin-icon , .email-icon {
-  margin-left: 25px;
-  max-width: 100%;
-  height: auto !important;
 }
 
 .text-footer {
