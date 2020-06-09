@@ -89,7 +89,6 @@ overflow: hidden;
   -webkit-box-sizing: border-box;
 }
 
-
 .hover_text:hover {
   color: red;
   -webkit-transition: color 2s ease;
@@ -108,4 +107,32 @@ overflow: hidden;
 
 .img-fluid,.img-thumbnail { transition: all .2s ease-in-out; }
 .img-fluid:hover { transform: scale(1.1); }
-.img-thumbnail:hover .img-fluid:hover { transform: scale(1.1);
+.img-thumbnail:hover .img-fluid:hover { transform: scale(1.1); }
+
+.margin-before {
+  margin-top: 30px;
+}
+
+.size-image {
+  width: 70%;
+  height: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+.bangkokfood {
+  height: 400px;
+}
+
+.container{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+img{
+    margin: 5px;
+    transition: all 1s;
+}
+img:hover{
+    transform: scale(1.1)
+}
