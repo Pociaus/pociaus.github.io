@@ -29,6 +29,9 @@ overflow: hidden;
   overflow: hidden;
 }
 
+.text-h2 {
+}
+
 .thumb {
     max-width: 2200px;
     max-height: 200px;
@@ -36,6 +39,10 @@ overflow: hidden;
     min-height: 150px;
 }
 
+.icons-food {
+  max-width: 40px;
+  max-height: 40px;
+}
 .theme-margin {
   margin-top: 30px
 }
@@ -129,10 +136,29 @@ display: flex;
 flex-wrap: wrap;
 justify-content: center;
 }
-img{
-    margin: 5px;
-    transition: all 1s;
-}
-img:hover{
-    transform: scale(1.1)
+
+
+        .flex-column {
+            max-width: 290px;
+        }
+
+        img {
+            margin: 5px;
+        }
+
+  .inline-block {
+    display: flex;
+  }
+
+  .inline-text {
+    margin-top: 20px;
+  }
+
+  .footer {
+    height: 50px;
+    background-color: #3AAFA9;
+  }
+
+  .footer-color {
+  background-color: #3AAFA9;
 }
